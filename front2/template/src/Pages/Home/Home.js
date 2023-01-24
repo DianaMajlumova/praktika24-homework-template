@@ -1,31 +1,24 @@
 import React from "react";
-import Navbar from "../../Layout/Navbar/Navbar";
-import { Helmet } from "react-helmet";
 import "./Home.scss";
+import FirstSection from "../../Components/HomeComponents/FirstSection/FirstSection";
+import OurPrograms from "../../Components/HomeComponents/OurPrograms/OurPrograms";
+import ExcellentInEducation from "../../Components/HomeComponents/ExcellentInEducation/ExcellentInEducation";
+import StriveForExcellent from "../../Components/HomeComponents/StriveForExcellent/StriveForExcellent";
+import EducationIsLife from "../../Components/HomeComponents/EducationIsLife/EducationIsLife";
+import OurTeacher from "../../Components/HomeComponents/OurTeacher/OurTeacher";
+import OurTeacherCards from "../../Components/HomeComponents/OurTeacherCards/OurTeacherCards";
+import Footer from "../../Layout/Footer/Footer";
 function Home() {
   return (
     <>
-      <Helmet>
-        <title>Home</title>
-        <meta name="description" content="Helmet application" />
-      </Helmet>
-      <div className="home_backround">
-        <Navbar />
-        <div className="home_text">
-          <div className="text">
-            <h1>Learn From The Expert</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              ipsa nulla sed quis rerum amet natus quas necessitatibus.
-            </p>
-            <div className="home_btn">
-              <button>
-                <p>Admission Now</p>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <FirstSection/>
+      <OurPrograms/>
+      <ExcellentInEducation/>
+      <StriveForExcellent/>
+      <EducationIsLife/>
+      <OurTeacher/>
+      <OurTeacherCards/>
+      <Footer/>
     </>
   );
 }

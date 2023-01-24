@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 const { Schema } = mongoose;
 const cardSchema = new Schema(
   {
-    image: { type: String, required: true },
+    name: { type: String, required: true },
     job: { type: String, required: true },
     description: { type: String, required: true },
   },
@@ -35,7 +35,7 @@ app.get("/cards", (req, res) => {
 //POST
 app.post("/cards", (req, res) => {
   let card = new Cards({
-    image: req.body.image,
+    name: req.body.name,
     job: req.body.job,
     description: req.body.description,
   });
